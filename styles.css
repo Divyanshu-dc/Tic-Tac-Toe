@@ -1,0 +1,138 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.landing-page, .game-page {
+    text-align: center;
+}
+
+.choose-button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.choose-button:hover{
+    background-color: rgb(86, 167, 228);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+}
+
+.cell {
+    border: 2px solid black;
+    font-size: 50px;
+    text-align: center;
+    line-height: 90px;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+
+
+.cell.X {
+    color: rgb(78, 202, 91); 
+}
+
+
+.cell.O {
+    color: red; 
+}
+
+
+
+.controls {
+    text-align: center;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .board {
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .cell {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .choose-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .board {
+        width: 80%;
+        height: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .cell {
+        font-size: 45px;
+        line-height: 75px;
+    }
+
+    .button {
+        font-size: 15px;
+        padding: 12px 24px;
+    }
+
+    .choose-button {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    .board {
+        width: 300px;
+        height: 300px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .cell {
+        font-size: 50px;
+        line-height: 90px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 15px 32px;
+    }
+
+    .choose-button {
+        font-size: 16px;
+        padding: 15px 32px;
+    }
+}
