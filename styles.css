@@ -22,7 +22,7 @@ body {
     background-color: rgb(86, 167, 228);
 }
 
-.board {
+/* .board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -30,6 +30,15 @@ body {
     width: 300px;
     height: 300px;
     margin: 20px auto;
+} */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    margin: 20px auto;
+    max-width: 600px; 
+    aspect-ratio: 1; 
 }
 
 .cell {
@@ -39,7 +48,7 @@ body {
     line-height: 90px;
     cursor: pointer;
     user-select: none;
-
+   
 }
 
 
